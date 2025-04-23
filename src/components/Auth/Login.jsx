@@ -16,7 +16,7 @@ const Login = ({ handleLogin }) => {
                     <input
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className='text-black outline-none bg-transparent border-2 border-emerald-600 py-3 px-10 rounded-full text-xl placeholder:text-gray-400'
+                        className='outline-none bg-transparent border-2 border-emerald-600 py-3 px-10 rounded-full text-xl placeholder:text-gray-400'
                         type='email'
                         placeholder='Enter your Email'
                         required />
@@ -24,7 +24,7 @@ const Login = ({ handleLogin }) => {
                     <input
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        className='text-black outline-none bg-transparent border-2 border-emerald-600 py-3 px-10 rounded-full text-xl placeholder:text-gray-400'
+                        className='outline-none bg-transparent border-2 border-emerald-600 py-3 px-10 rounded-full text-xl placeholder:text-gray-400'
                         type='password'
                         placeholder='Enter Password'
                         required />

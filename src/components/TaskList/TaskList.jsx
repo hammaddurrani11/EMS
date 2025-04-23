@@ -9,16 +9,16 @@ const TaskList = ({ data }) => {
     <div id="tasklist" className='h-[55%] w-full overflow-x-auto flex items-center flex-nowrap justify-start gap-5 py-10 mt-10'>
       {data.tasks.map((e, idx) => {
         if (e.active) {
-          return <AcceptTask key={idx} />
+          return <AcceptTask key={idx} data={e} />
         }
         if (e.newTask) {
-          return <NewTask key={idx} />
+          return <NewTask key={idx} data={e} />
         }
         if (e.completed) {
-          return <CompleteTask key={idx} />
+          return <CompleteTask key={idx} data={e} />
         }
         if (e.failed) {
-          return <FailedTask key={idx} />
+          return <FailedTask key={idx} data={e} />
         }
       })}
     </div>
